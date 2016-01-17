@@ -479,6 +479,10 @@
                         });
                         $this.data('bs.popover').tip().addClass('iconpicker-popover');
                         $this.popover('show');
+                        $this.click(function(e) {
+                            $this.popover('toggle');
+                            e.preventDefault();
+                        })
                     }); 
                 }
                 else{
