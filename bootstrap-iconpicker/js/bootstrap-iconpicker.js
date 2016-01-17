@@ -65,6 +65,7 @@
         footer: true,
         labelFooter: '{0} - {1} of {2}',
         placement: 'bottom',
+        container: false, //'body'
         rows: 4,
         search: true,
         searchText: 'Search icon',
@@ -470,7 +471,7 @@
                             trigger: 'manual',
                             html: true,
                             content: op.table,
-                            container: 'body',
+                            container:  op.container,
                             placement: op.placement
                         }).on('shown.bs.popover', function () {
                             data.switchPage(op.icon);
