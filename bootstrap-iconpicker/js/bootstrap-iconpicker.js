@@ -466,6 +466,10 @@
                     data.setIconset(op.iconset);
                     $this.on('click', function(e) {
                         e.preventDefault();
+                        //TODO
+                        //if($this.next('div.popover').length)
+                        //    return;
+
                         $this.popover({
                             animation: false,
                             trigger: 'manual',
@@ -482,7 +486,7 @@
                         $this.click(function(e) {
                             $this.popover('toggle');
                             e.preventDefault();
-                        })
+                        });
                     }); 
                 }
                 else{
